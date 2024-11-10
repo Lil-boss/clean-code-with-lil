@@ -20,32 +20,7 @@ echo $calculator->getArea(['type' => 'triangle', 'base' => 4, 'height' => 8]); -
 
 
 
-//answer
-<?php
-class shapeCalculator{
-    private $rectangle;
-    private $circle;
-    private $triangle;
 
-    public function setRectangle(int $width, int $height){
-        return $width*$height;
-    }
-
-    public function setCircle(int $radius){
-        return pi() * pow($radius, 2);
-    }
-
-    public function setTriangle(int $base, int $height){
-        return 0.5 *$base*$height;
-    }
-}
-
-$calculator = new shapeCalculator();
-echo $calculator->setRectangle(5, 10);
-echo $calculator->setCircle(7);
-echo $calculator->setTriangle(4, 8);
-
-?>
 
 <!-- Evaluation
 What’s Good 👍
