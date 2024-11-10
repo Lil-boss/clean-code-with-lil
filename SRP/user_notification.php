@@ -33,46 +33,7 @@ $user->register();
 
 
 
-<!-- answer -->
 
-<?php
-
-class UserAccount {
-    private $name;
-    private $email;
-
-    public function __construct(string $name, string $email) {
-        $this->name = $name;
-        $this->email = $email;
-    }
-
-    public function register() {
-        // Logic to register user
-        echo "User registered: " . $this->name;
-    }
-}
-
-class Notification {
-    private $email;
-
-    public function __construct(string $email) {
-        $this->email = $email;
-    }
-
-    public function sendEmailNotification() {
-        // Simple email notification logic
-        echo "Email sent to " . $this->email;
-    }
-}
-
-// Usage
-$user = new UserAccount("John Doe", "hello@gmail.com");
-$user->register();
-
-$notification = new Notification("hello@gmail.com");
-$notification->sendEmailNotification();
-
-?>
 // Evaluation
 // What’s Good 👍
 // Separation of Responsibilities: You've correctly separated user management and notification responsibilities, making each class easier to understand and maintain.
